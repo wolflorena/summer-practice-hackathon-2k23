@@ -22,7 +22,7 @@ Or, if you want to make it harder and more impressive:
 
 The name of the new MFA name-code pairs is obtained via call to the OpenAI API
 
-Notes:
+**Notes:**
 
 Documentation and clean code will be highly appreciated.
 
