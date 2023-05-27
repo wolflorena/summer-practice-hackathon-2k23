@@ -74,7 +74,8 @@ header h1 {
   margin-left: 150px;
 }
 
-.main #addCard {
+.main #addCard,
+.main #addCardAPI {
   margin-left: 90vw;
   margin-top: 25px;
 
@@ -113,4 +114,18 @@ header h1 {
 .swal-icon--success:after,
 .swal-icon--success__hide-corners {
   background-color: var(--light-gray);
+}
+
+.clear {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: large;
+
+  margin-bottom: 10px;
+}
+
+#container {
+  width: 10px;
+  height: 10px;
 }

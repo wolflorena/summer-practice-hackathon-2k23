@@ -5,7 +5,7 @@ window.onload = function () {
   const storedCards = localStorage.getItem("cards");
   if (storedCards) {
     cards = JSON.parse(storedCards);
-    console.log(cards);
+
     cards.forEach((card) => {
       renderCards(card);
     });
@@ -20,6 +20,7 @@ function addCard(name, code) {
 
   cards.push(card);
   saveCardsToLocalStorage();
+  window.location.reload();
   renderCards(card);
 }
 
@@ -53,10 +54,7 @@ function saveCardsToLocalStorage() {
 }
 
 function removeFromLocalStorage(id) {
-  console.log(cards);
   cards = cards.filter((card) => card.id !== id);
-  console.log(cards);
-
   saveCardsToLocalStorage();
 }
 
@@ -99,6 +97,41 @@ function deleteCard(id) {
       });
       cardToRemove.remove();
       removeFromLocalStorage(id);
+    } else {
+      swal("Your imaginary file is safe!");
+    }
+  });
+}
+
+function fetchFromAPI() {
+  fetch("https://swapi.dev/api/people")
+    .then((res) => res.json())
+    .then((data) => {
+      const results = data.results;
+      const names = results.map((person) => person.name);
+      names.forEach((e) => {
+        addCard(e, generateRandomNumber());
+      });
+    });
+}
+
+function clearAll() {
+  swal({
+    title: "Are you sure?",
+    text: "Once deleted, you will not be able to recover this data!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  }).then((willDelete) => {
+    if (willDelete) {
+      swal("Poof! Your imaginary file has been deleted!", {
+        icon: "success",
+      });
+      cards.forEach((card) => {
+        const cardToRemove = document.getElementById(card.id);
+        cardToRemove.remove();
+        removeFromLocalStorage(card.id);
+      });
     } else {
       swal("Your imaginary file is safe!");
     }

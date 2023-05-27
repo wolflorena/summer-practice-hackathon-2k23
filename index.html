@@ -17,15 +17,16 @@
     </header>
 
     <div class="main">
-      <div class="cards" id="cards">
-        <!-- <div class="card">
-          <h2>Code</h2>
-          <h4>Name</h4>
-        </div> -->
-      </div>
+      <button onclick="clearAll()" class="clear">Clear All</button>
+
+      <div class="cards" id="cards"></div>
 
       <button onclick="openPopup();" id="addCard">
         <i class="fa-solid fa-plus fa-2xl"></i>
+      </button>
+
+      <button onclick="fetchFromAPI();" id="addCardAPI">
+        <i class="fa-solid fa-address-book fa-2xl"></i>
       </button>
     </div>
 
