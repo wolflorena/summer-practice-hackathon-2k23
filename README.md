@@ -10,7 +10,7 @@ In this hackathon challenge, you will be tasked with developing a Multi-Factor A
 
 * Develop a web application that runs locally in the browser
 * A user can view all the available MFA name-code pairs
-* A user can add a new MFA name-code pair, by providing a name for the new application they want to use (if you ever wondered how to use a form tag, now’s the time to try!)
+* A user can add a new MFA name-code pair, by providing a name for the code (if you ever wondered how to use a form tag, now’s the time to try!)
 * Codes are made of 6 randomly generated digits. Bet you did this in college already.
 * When the browser tab is closed and reopened, I want all my registered MFA name-code pairs to be preserved (see localStorage)
 
