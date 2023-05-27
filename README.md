@@ -1,6 +1,7 @@
 # summer-practice-hackathon-2k23
 
-<ADD_YOUR_FULL_NAME>
+Wifi Pass: Haufe!
+Developer: <ADD_YOUR_FULL_NAME>
 
 In this hackathon challenge, you will be tasked with developing a Multi-Factor Authentication (MFA) code generator. Don't worry it's not as scary as it sounds.
 
