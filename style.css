@@ -1,0 +1,116 @@
+:root {
+  --light-gray: #525252;
+  --gray: #414141;
+  --dark-gray: #313131;
+  --red: #ca3e47;
+  --black: #000;
+  --white: #eeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--red);
+  height: 10vh;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+.main {
+  height: 90vh;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cards .card {
+  background-color: var(--dark-gray);
+  width: 200px;
+  height: 100px;
+
+  border-radius: 15px;
+  padding: 10px 0 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cards .card h2 {
+  font-size: 2rem;
+  color: var(--red);
+}
+
+.cards .card h4 {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: lighter;
+}
+
+.cards .card button {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+
+  margin-left: 150px;
+}
+
+.main #addCard {
+  margin-left: 90vw;
+  margin-top: 25px;
+
+  background-color: transparent;
+  border: none;
+
+  color: var(--white);
+
+  cursor: pointer;
+}
+
+.swal-modal {
+  background-color: var(--light-gray);
+}
+
+.swal-button--confirm {
+  background-color: var(--red);
+}
+
+.swal-content__input {
+  background-color: var(--light-gray);
+  color: white;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.swal-content__input::placeholder {
+  color: var(--black);
+}
+
+.swal-title {
+  color: white;
+}
+
+.swal-icon--success:before,
+.swal-icon--success:after,
+.swal-icon--success__hide-corners {
+  background-color: var(--light-gray);
+}
