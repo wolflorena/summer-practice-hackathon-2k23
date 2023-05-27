@@ -14,15 +14,13 @@ In this hackathon challenge, you will be tasked with developing a Multi-Factor A
 
 **Bonus:**
 
-All MFA codes are regenerated once every 30 seconds (see window.setInterval())
-
-A user can delete an existing MFA name-code pair. Remember localStorage?
-
-The name of the new MFA name-code pairs is obtained via call to https://swapi.dev/api/people. Ever made an API call before? “fetch()”-ing information is simple once you get the hang of it.
+* All MFA codes are regenerated once every 30 seconds (see window.setInterval())
+* A user can delete an existing MFA name-code pair. Remember localStorage?
+* The name of the new MFA name-code pairs is obtained via call to https://swapi.dev/api/people. Ever made an API call before? “fetch()”-ing information is simple once you get the hang of it.
 
 Or, if you want to make it harder and more impressive:
 
-The name of the new MFA name-code pairs is obtained via call to the OpenAI API
+* The name of the new MFA name-code pairs is obtained via call to the OpenAI API
 
 **Notes:**
 
